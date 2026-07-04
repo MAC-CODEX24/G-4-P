@@ -1,0 +1,163 @@
+/* ===== MUSIC PAGE HERO ===== */
+.music-hero {
+  position: relative;
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  background: linear-gradient(160deg, #0d001a 0%, #1a0035 40%, #0f0f0f 100%);
+  overflow: hidden;
+}
+
+.music-hero::before {
+  content: '🎵';
+  position: absolute;
+  font-size: 18rem;
+  opacity: 0.04;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.music-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  margin-bottom: 0.6rem;
+}
+.music-hero h1 span { color: #a855f7; }
+.music-hero p { color: #888; font-size: 1rem; }
+
+/* ===== MUSIC CARD ENHANCEMENTS ===== */
+.media-card .badge.trending {
+  background: rgba(255,100,0,0.12);
+  color: #ff6400;
+  border-color: rgba(255,100,0,0.35);
+}
+.media-card .badge.chart {
+  background: rgba(0,180,255,0.12);
+  color: #00b4ff;
+  border-color: rgba(0,180,255,0.35);
+}
+.media-card .badge.classic {
+  background: rgba(168,85,247,0.12);
+  color: #a855f7;
+  border-color: rgba(168,85,247,0.35);
+}
+
+.media-card:hover {
+  box-shadow: 0 8px 25px rgba(168,85,247,0.2);
+}
+
+.media-thumb {
+  transition: transform 0.3s;
+}
+.media-card:hover .media-thumb { transform: scale(1.15) rotate(-5deg); }
+
+/* ===== NOW PLAYING BAR ===== */
+.now-playing {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: #1a0035;
+  border: 1px solid #2d0055;
+  border-radius: 16px;
+  padding: 1.2rem 1.8rem;
+  margin: 1rem 2rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.np-icon { font-size: 2.5rem; flex-shrink: 0; }
+
+.np-info { flex: 1; min-width: 150px; }
+.np-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #a855f7;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.np-info h3 { font-size: 1.1rem; font-weight: 700; }
+.np-info p  { color: #888; font-size: 0.82rem; }
+
+/* Progress bar */
+.np-progress {
+  flex: 2;
+  min-width: 200px;
+}
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+.progress-fill {
+  height: 100%;
+  width: 45%;
+  background: linear-gradient(90deg, #a855f7, #e50914);
+  border-radius: 2px;
+  animation: progressPulse 3s ease-in-out infinite alternate;
+}
+@keyframes progressPulse {
+  from { width: 30%; }
+  to   { width: 70%; }
+}
+.progress-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: #555;
+}
+
+/* Controls */
+.np-controls {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.np-btn {
+  background: rgba(168,85,247,0.15);
+  border: 1px solid rgba(168,85,247,0.3);
+  color: #a855f7;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.2s;
+}
+.np-btn:hover { background: rgba(168,85,247,0.3); transform: scale(1.1); }
+.np-btn.play {
+  width: 44px; height: 44px;
+  background: #a855f7;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.np-btn.play:hover { background: #9333ea; }
+
+/* ===== MUSIC FILTER ACTIVE COLOR ===== */
+.filter-btn:hover,
+.filter-btn.active {
+  background: #a855f7;
+  border-color: #a855f7;
+  color: #fff;
+}
+
+/* ===== NO RESULTS ===== */
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #555;
+  font-size: 1rem;
+  display: none;
+  grid-column: 1 / -1;
+}
+.no-results.show { display: block; }

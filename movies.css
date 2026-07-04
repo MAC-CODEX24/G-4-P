@@ -1,0 +1,131 @@
+/* ===== MOVIES PAGE HERO ===== */
+.movies-hero {
+  position: relative;
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  background: linear-gradient(160deg, #1a0000 0%, #2a0008 40%, #0f0f0f 100%);
+  overflow: hidden;
+}
+
+.movies-hero::before {
+  content: '🎬';
+  position: absolute;
+  font-size: 18rem;
+  opacity: 0.04;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+
+.movies-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  margin-bottom: 0.6rem;
+}
+.movies-hero h1 span { color: var(--primary); }
+.movies-hero p { color: #888; font-size: 1rem; }
+
+/* ===== MOVIE CARD ENHANCEMENTS ===== */
+.grid { padding-bottom: 4rem; }
+
+.media-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.media-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(229,9,20,0.08) 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: var(--radius);
+}
+.media-card:hover::before { opacity: 1; }
+
+.media-thumb {
+  font-size: 3.5rem;
+  margin-bottom: 0.8rem;
+  display: block;
+  transition: transform 0.3s;
+}
+.media-card:hover .media-thumb { transform: scale(1.15); }
+
+.media-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.media-card p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Rating badge color override for movies */
+.media-card .badge {
+  background: rgba(229,9,20,0.12);
+  color: #ff6b6b;
+  border-color: rgba(229,9,20,0.35);
+}
+
+/* ===== FEATURED MOVIE BANNER ===== */
+.movie-spotlight {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, #1a0000, #2a0010);
+  border: 1px solid #3a0015;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1rem 2rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.spotlight-emoji { font-size: 5rem; flex-shrink: 0; }
+
+.spotlight-info { flex: 1; min-width: 200px; }
+.spotlight-info .featured-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.spotlight-info h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 0.5rem; }
+.spotlight-info p  { color: #888; font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; }
+
+.spotlight-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+.meta-tag {
+  padding: 0.25rem 0.8rem;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50px;
+  font-size: 0.78rem;
+  color: #ccc;
+  border: 1px solid #333;
+}
+
+/* ===== NO RESULTS ===== */
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #555;
+  font-size: 1rem;
+  display: none;
+  grid-column: 1 / -1;
+}
+.no-results.show { display: block; }

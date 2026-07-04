@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAC | Sports</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sports.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">MAC<span>Media</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="sportz.html" class="active">Sports</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="sports-hero">
+    <div class="sports-hero-bg"></div>
+    <div class="sports-hero-content">
+      <div class="hero-tag">🏆 Live Scores &nbsp;|&nbsp; ⚽ Football &nbsp;|&nbsp; 🏀 Basketball &nbsp;|&nbsp; 🎾 Tennis</div>
+      <h1>The World of <span>Sports</span></h1>
+      <p>Live scores, trending matches, top athletes and the latest sports news — all in one place.</p>
+      <div class="hero-cta">
+        <a href="#live-scores" class="btn">Live Scores</a>
+        <a href="#sports-news" class="btn btn-outline">Latest News</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- LIVE SCORES TICKER -->
+  <div class="scores-ticker-wrap">
+    <span class="live-dot"></span>
+    <div class="scores-ticker" id="scoresTicker">
+      <span>⚽ Man City 2 – 1 Arsenal &nbsp;|&nbsp; 75'</span>
+      <span>🏀 Lakers 98 – 104 Warriors &nbsp;|&nbsp; Q3</span>
+      <span>🎾 Djokovic 6-4 6-3 Alcaraz &nbsp;|&nbsp; Final</span>
+      <span>🏈 Chiefs 21 – 17 Eagles &nbsp;|&nbsp; 3rd Qtr</span>
+      <span>⚽ Barcelona 3 – 0 Atletico &nbsp;|&nbsp; FT</span>
+      <span>🏏 India 287/4 vs Australia &nbsp;|&nbsp; 48 Overs</span>
+      <span>🏊 Caeleb Dressel 🥇 100m Freestyle</span>
+      <span>⚽ Man City 2 – 1 Arsenal &nbsp;|&nbsp; 75'</span>
+      <span>🏀 Lakers 98 – 104 Warriors &nbsp;|&nbsp; Q3</span>
+      <span>🎾 Djokovic 6-4 6-3 Alcaraz &nbsp;|&nbsp; Final</span>
+    </div>
+  </div>
+
+  <!-- LIVE SCORES SECTION -->
+  <section class="sports-section" id="live-scores">
+    <div class="section-header">
+      <h2>🔴 Live <span>Scores</span></h2>
+      <p>Updated in real time</p>
+    </div>
+
+    <div class="scores-grid">
+
+      <div class="score-card live">
+        <div class="score-sport">⚽ Premier League</div>
+        <div class="score-teams">
+          <div class="team">
+            <span class="team-icon">🔵</span>
+            <span class="team-name">Man City</span>
+            <span class="team-score">2</span>
+          </div>
+          <div class="score-vs">
+            <span class="live-badge">LIVE 75'</span>
+          </div>
+          <div class="team">
+            <span class="team-score">1</span>
+            <span class="team-name">Arsenal</span>
+            <span class="team-icon">🔴</span>
+          </div>
+        </div>
+        <div class="score-meta">Etihad Stadium &nbsp;|&nbsp; Premier League</div>
+      </div>
+
+      <div class="score-card live">
+        <div class="score-sport">🏀 NBA</div>
+        <div class="score-teams">
+          <div class="team">
+            <span class="team-icon">💛</span>
+            <span class="team-name">Lakers</span>
+            <span class="team-score">98</span>
+          </div>
+          <div class="score-vs">
+            <span class="live-badge">LIVE Q3</span>
+          </div>
+          <div class="team">
+            <span class="team-score">104</span>
+            <span class="team-name">Warriors</span>
+            <span class="team-icon">💙</span>
+          </div>
+        </div>
+        <div class="score-meta">Chase Center &nbsp;|&nbsp; NBA Regular Season</div>
+      </div>
+
+      <div class="score-card finished">
+        <div class="score-sport">⚽ La Liga</div>
+        <div class="score-teams">
+          <div class="team">
+            <span class="team-icon">🔵🔴</span>
+            <span class="team-name">Barcelona</span>
+            <span class="team-score">3</span>
+          </div>
+          <div class="score-vs">
+            <span class="ft-badge">FT</span>
+          </div>
+          <div class="team">
+            <span class="team-score">0</span>
+            <span class="team-name">Atletico</span>
+            <span class="team-icon">🔴⚪</span>
+          </div>
+        </div>
+        <div class="score-meta">Camp Nou &nbsp;|&nbsp; La Liga</div>
+      </div>
+
+      <div class="score-card finished">
+        <div class="score-sport">🎾 Grand Slam</div>
+        <div class="score-teams">
+          <div class="team">
+            <span class="team-icon">🇷🇸</span>
+            <span class="team-name">Djokovic</span>
+            <span class="team-score">2</span>
+          </div>
+          <div class="score-vs">
+            <span class="ft-badge">FT</span>
+          </div>
+          <div class="team">
+            <span class="team-score">0</span>
+            <span class="team-name">Alcaraz</span>
+            <span class="team-icon">🇪🇸</span>
+          </div>
+        </div>
+        <div class="score-meta">Centre Court &nbsp;|&nbsp; Wimbledon</div>
+      </div>
+
+      <div class="score-card upcoming">
+        <div class="score-sport">🏈 NFL</div>
+        <div class="score-teams">
+          <div class="team">
+            <span class="team-icon">🔴🟡</span>
+            <span class="team-name">Chiefs</span>
+            <span class="team-score">–</span>
+          </div>
+          <div class="score-vs">
+            <span class="upcoming-badge">TODAY 8PM</span>
+          </div>
+          <div class="team">
+            <span class="team-score">–</span>
+            <span class="team-name">Cowboys</span>
+            <span class="team-icon">⭐</span>
+          </div>
+        </div>
+        <div class="score-meta">Arrowhead Stadium &nbsp;|&nbsp; NFL Week 14</div>
+      </div>
+
+      <div class="score-card upcoming">
+        <div class="score-sport">🏏 Cricket</div>
+        <div class="score-teams">
+          <div class="team">
+            <span class="team-icon">🇮🇳</span>
+            <span class="team-name">India</span>
+            <span class="team-score">–</span>
+          </div>
+          <div class="score-vs">
+            <span class="upcoming-badge">TOMORROW</span>
+          </div>
+          <div class="team">
+            <span class="team-score">–</span>
+            <span class="team-name">Australia</span>
+            <span class="team-icon">🇦🇺</span>
+          </div>
+        </div>
+        <div class="score-meta">MCG &nbsp;|&nbsp; Test Series</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRENDING SPORTS -->
+  <section class="sports-section" id="sports-news">
+    <div class="section-header">
+      <h2>🔥 Trending <span>Now</span></h2>
+      <p>What the world is watching</p>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="football">Football</button>
+      <button class="filter-btn" data-filter="basketball">Basketball</button>
+      <button class="filter-btn" data-filter="tennis">Tennis</button>
+      <button class="filter-btn" data-filter="athletics">Athletics</button>
+      <button class="filter-btn" data-filter="cricket">Cricket</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search sports, teams, athletes..." />
+    </div>
+
+    <div class="news-grid" id="newsGrid">
+
+      <div class="news-card" data-title="Champions League Final" data-genre="football">
+        <div class="news-thumb football">🏆</div>
+        <div class="news-body">
+          <span class="news-cat football-cat">Football</span>
+          <h3>Champions League Final Set</h3>
+          <p>Real Madrid and Bayern Munich clash in the most anticipated final of the decade.</p>
+          <div class="news-footer">
+            <span>⏱ 2 hours ago</span>
+            <span class="news-hot">🔥 Trending</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card" data-title="LeBron James Record" data-genre="basketball">
+        <div class="news-thumb basketball">🏀</div>
+        <div class="news-body">
+          <span class="news-cat basketball-cat">Basketball</span>
+          <h3>LeBron Breaks All-Time Record</h3>
+          <p>LeBron James surpasses Kareem Abdul-Jabbar's all-time scoring record in stunning fashion.</p>
+          <div class="news-footer">
+            <span>⏱ 5 hours ago</span>
+            <span class="news-hot">⭐ Top Story</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card" data-title="Wimbledon 2026" data-genre="tennis">
+        <div class="news-thumb tennis">🎾</div>
+        <div class="news-body">
+          <span class="news-cat tennis-cat">Tennis</span>
+          <h3>Wimbledon 2026 Preview</h3>
+          <p>Djokovic eyes a record 25th Grand Slam title as Alcaraz looks to defend his crown.</p>
+          <div class="news-footer">
+            <span>⏱ 1 day ago</span>
+            <span class="news-hot">🏆 Grand Slam</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card" data-title="World Athletics Championship" data-genre="athletics">
+        <div class="news-thumb athletics">🏃</div>
+        <div class="news-body">
+          <span class="news-cat athletics-cat">Athletics</span>
+          <h3>100m World Record Broken</h3>
+          <p>A new world record in the 100m sprint stuns the crowd at the World Athletics Championship.</p>
+          <div class="news-footer">
+            <span>⏱ 3 hours ago</span>
+            <span class="news-hot">🔥 Breaking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card" data-title="Premier League Title Race" data-genre="football">
+        <div class="news-thumb football">⚽</div>
+        <div class="news-body">
+          <span class="news-cat football-cat">Football</span>
+          <h3>Premier League Title Race Heats Up</h3>
+          <p>Only 3 points separate the top 4 clubs with 6 games remaining in the season.</p>
+          <div class="news-footer">
+            <span>⏱ 6 hours ago</span>
+            <span class="news-hot">⚡ Hot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-card" data-title="India vs Australia Test" data-genre="cricket">
+        <div class="news-thumb cricket">🏏</div>
+        <div class="news-body">
+          <span class="news-cat cricket-cat">Cricket</span>
+          <h3>India vs Australia — Test Series</h3>
+          <p>India's batting lineup faces Australia's fearsome pace attack in a must-win Test match.</p>
+          <div class="news-footer">
+            <span>⏱ 12 hours ago</span>
+            <span class="news-hot">🏏 Series Decider</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TOP ATHLETES -->
+  <section class="sports-section">
+    <div class="section-header">
+      <h2>🌟 Top <span>Athletes</span></h2>
+      <p>The biggest names in sport right now</p>
+    </div>
+    <div class="athletes-grid">
+      <div class="athlete-card">
+        <div class="athlete-avatar">⚽</div>
+        <h4>Erling Haaland</h4>
+        <span class="athlete-sport">Football</span>
+        <div class="athlete-stat">52 Goals This Season</div>
+      </div>
+      <div class="athlete-card">
+        <div class="athlete-avatar">🏀</div>
+        <h4>LeBron James</h4>
+        <span class="athlete-sport">Basketball</span>
+        <div class="athlete-stat">All-Time Top Scorer</div>
+      </div>
+      <div class="athlete-card">
+        <div class="athlete-avatar">🎾</div>
+        <h4>Novak Djokovic</h4>
+        <span class="athlete-sport">Tennis</span>
+        <div class="athlete-stat">24 Grand Slams</div>
+      </div>
+      <div class="athlete-card">
+        <div class="athlete-avatar">🏃</div>
+        <h4>Mondo Duplantis</h4>
+        <span class="athlete-sport">Athletics</span>
+        <div class="athlete-stat">World Record Holder</div>
+      </div>
+      <div class="athlete-card">
+        <div class="athlete-avatar">🏏</div>
+        <h4>Virat Kohli</h4>
+        <span class="athlete-sport">Cricket</span>
+        <div class="athlete-stat">80+ International 100s</div>
+      </div>
+      <div class="athlete-card">
+        <div class="athlete-avatar">🥊</div>
+        <h4>Canelo Álvarez</h4>
+        <span class="athlete-sport">Boxing</span>
+        <div class="athlete-stat">4-Division World Champ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPORTS FEEDBACK FORM -->
+  <section class="sports-form-section">
+    <div class="sports-form-inner">
+      <div class="form-intro">
+        <h2>📣 Your <span>Voice</span></h2>
+        <p>Got a sports opinion? Predict a match result, suggest coverage, or just share your thoughts.</p>
+        <ul class="form-perks">
+          <li>🏆 Predict match outcomes</li>
+          <li>📰 Suggest sports to cover</li>
+          <li>💬 Share your hot takes</li>
+          <li>⭐ Rate your favourite athletes</li>
+        </ul>
+      </div>
+      <form id="sportsForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sName">Your Name</label>
+            <input type="text" id="sName" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="sEmail">Email</label>
+            <input type="email" id="sEmail" name="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sSport">Favourite Sport</label>
+          <select id="sSport" name="sport">
+            <option value="">-- Select a sport --</option>
+            <option>Football</option>
+            <option>Basketball</option>
+            <option>Tennis</option>
+            <option>Cricket</option>
+            <option>Athletics</option>
+            <option>Boxing</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sPrediction">Match Prediction / Comment</label>
+          <textarea id="sPrediction" name="message" placeholder="e.g. Man City will win the Champions League this year because..." required></textarea>
+          <span class="char-count" id="sCharCount">0 / 400</span>
+        </div>
+        <div class="form-group rating-group">
+          <label>Rate the Sports Coverage</label>
+          <div class="star-rating" id="starRating">
+            <span class="star" data-val="1">★</span>
+            <span class="star" data-val="2">★</span>
+            <span class="star" data-val="3">★</span>
+            <span class="star" data-val="4">★</span>
+            <span class="star" data-val="5">★</span>
+          </div>
+          <input type="hidden" id="ratingVal" name="rating" value="0" />
+        </div>
+        <button type="submit" class="btn submit-btn" id="sSubmitBtn">🏅 Submit</button>
+        <div id="sFormMsg"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MAC Media. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/sports.js"></script>
+</body>
+</html>

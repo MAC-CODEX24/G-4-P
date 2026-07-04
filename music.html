@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAC | Music</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">MAC<span>Media</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="music.html" class="active">Music</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>🎵 Music</h1>
+    <p>Discover trending tracks and albums.</p>
+  </section>
+
+  <section class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search music..." />
+  </section>
+
+  <div class="filter-tabs">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="pop">Pop</button>
+    <button class="filter-btn" data-filter="rock">Rock</button>
+    <button class="filter-btn" data-filter="hip-hop">Hip-Hop</button>
+    <button class="filter-btn" data-filter="rnb">R&amp;B</button>
+    <button class="filter-btn" data-filter="classic">Classic</button>
+  </div>
+
+  <section class="grid" id="musicGrid">
+    <div class="media-card" data-title="Blinding Lights" data-genre="pop rnb">
+      <div class="media-thumb">🌃</div>
+      <h3>Blinding Lights</h3>
+      <p>The Weeknd | Pop</p>
+      <span class="badge">🔥 Trending</span>
+    </div>
+    <div class="media-card" data-title="Shape of You" data-genre="pop">
+      <div class="media-thumb">🎸</div>
+      <h3>Shape of You</h3>
+      <p>Ed Sheeran | Pop</p>
+      <span class="badge">⭐ Top Chart</span>
+    </div>
+    <div class="media-card" data-title="Bohemian Rhapsody" data-genre="rock classic">
+      <div class="media-thumb">🎤</div>
+      <h3>Bohemian Rhapsody</h3>
+      <p>Queen | Rock</p>
+      <span class="badge">🏆 Classic</span>
+    </div>
+    <div class="media-card" data-title="Lose Yourself" data-genre="hip-hop">
+      <div class="media-thumb">🎧</div>
+      <h3>Lose Yourself</h3>
+      <p>Eminem | Hip-Hop</p>
+      <span class="badge">🏆 Classic</span>
+    </div>
+    <div class="media-card" data-title="Levitating" data-genre="pop">
+      <div class="media-thumb">🪐</div>
+      <h3>Levitating</h3>
+      <p>Dua Lipa | Pop</p>
+      <span class="badge">🔥 Trending</span>
+    </div>
+    <div class="media-card" data-title="Hotel California" data-genre="rock classic">
+      <div class="media-thumb">🌴</div>
+      <h3>Hotel California</h3>
+      <p>Eagles | Rock</p>
+      <span class="badge">🏆 Classic</span>
+    </div>
+    <div class="media-card" data-title="God's Plan" data-genre="hip-hop">
+      <div class="media-thumb">🙏</div>
+      <h3>God's Plan</h3>
+      <p>Drake | Hip-Hop</p>
+      <span class="badge">🔥 Trending</span>
+    </div>
+    <div class="media-card" data-title="As It Was" data-genre="pop">
+      <div class="media-thumb">🌟</div>
+      <h3>As It Was</h3>
+      <p>Harry Styles | Pop</p>
+      <span class="badge">⭐ Top Chart</span>
+    </div>
+    <div class="media-card" data-title="Smells Like Teen Spirit" data-genre="rock">
+      <div class="media-thumb">🎸</div>
+      <h3>Smells Like Teen Spirit</h3>
+      <p>Nirvana | Rock</p>
+      <span class="badge">🏆 Classic</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MAC Media. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

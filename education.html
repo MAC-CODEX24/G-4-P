@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAC | Education</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/education.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">MAC<span>Media</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="edu-hero">
+    <div class="edu-hero-text">
+      <div class="hero-tag">📚 Learn at Your Own Pace</div>
+      <h1>Code. Build. <span>Grow.</span></h1>
+      <p>Free learning resources for HTML, CSS, JavaScript, Python, C++ and more — all in one place.</p>
+      <a href="#courses" class="btn">Browse Courses</a>
+    </div>
+    <div class="edu-hero-visual">
+      <div class="code-block">
+        <span class="cb-dot red"></span>
+        <span class="cb-dot yellow"></span>
+        <span class="cb-dot green"></span>
+        <pre><code><span class="c-kw">function</span> <span class="c-fn">learn</span>() {
+  <span class="c-kw">const</span> skills = [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+    <span class="c-str">"JavaScript"</span>,
+    <span class="c-str">"Python"</span>, <span class="c-str">"C++"</span>
+  ];
+  skills.<span class="c-fn">forEach</span>(s =&gt;
+    console.<span class="c-fn">log</span>(<span class="c-str">`Mastering ${s}`</span>)
+  );
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH & FILTER -->
+  <section class="edu-controls" id="courses">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search courses..." />
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="programming">Programming</button>
+      <button class="filter-btn" data-filter="database">Database</button>
+      <button class="filter-btn" data-filter="tools">Tools</button>
+    </div>
+  </section>
+
+  <!-- COURSES GRID -->
+  <section class="edu-grid" id="coursesGrid">
+
+    <!-- HTML -->
+    <div class="course-card" data-title="HTML" data-genre="web">
+      <div class="course-icon" style="background:linear-gradient(135deg,#e44d26,#f16529);">
+        <span>HTML</span>
+      </div>
+      <div class="course-body">
+        <span class="level beginner">Beginner</span>
+        <h3>HTML Fundamentals</h3>
+        <p>Learn the building blocks of every website — structure, elements, forms and semantics.</p>
+        <ul class="topic-list">
+          <li>✅ Tags &amp; Elements</li>
+          <li>✅ Forms &amp; Tables</li>
+          <li>✅ Semantic HTML5</li>
+          <li>✅ Accessibility basics</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="btn">MDN Docs</a>
+          <a href="https://www.w3schools.com/html/" target="_blank" class="btn btn-outline">W3Schools</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="course-card" data-title="CSS" data-genre="web">
+      <div class="course-icon" style="background:linear-gradient(135deg,#264de4,#2965f1);">
+        <span>CSS</span>
+      </div>
+      <div class="course-body">
+        <span class="level beginner">Beginner</span>
+        <h3>CSS Styling &amp; Layout</h3>
+        <p>Style your pages with colors, fonts, Flexbox, Grid, animations and responsive design.</p>
+        <ul class="topic-list">
+          <li>✅ Selectors &amp; Box Model</li>
+          <li>✅ Flexbox &amp; Grid</li>
+          <li>✅ Animations &amp; Transitions</li>
+          <li>✅ Responsive Design</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank" class="btn">MDN Docs</a>
+          <a href="https://www.w3schools.com/css/" target="_blank" class="btn btn-outline">W3Schools</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="course-card" data-title="JavaScript" data-genre="web programming">
+      <div class="course-icon" style="background:linear-gradient(135deg,#f7df1e,#e6c800);">
+        <span style="color:#000;">JS</span>
+      </div>
+      <div class="course-body">
+        <span class="level intermediate">Intermediate</span>
+        <h3>JavaScript</h3>
+        <p>Add interactivity to your sites — DOM manipulation, events, APIs, ES6+ and more.</p>
+        <ul class="topic-list">
+          <li>✅ Variables, Functions, Loops</li>
+          <li>✅ DOM &amp; Events</li>
+          <li>✅ Fetch API &amp; JSON</li>
+          <li>✅ ES6+ Features</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank" class="btn">MDN Docs</a>
+          <a href="https://javascript.info/" target="_blank" class="btn btn-outline">JS.info</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Python -->
+    <div class="course-card" data-title="Python" data-genre="programming">
+      <div class="course-icon" style="background:linear-gradient(135deg,#3572A5,#ffd43b);">
+        <span>Py</span>
+      </div>
+      <div class="course-body">
+        <span class="level beginner">Beginner</span>
+        <h3>Python Programming</h3>
+        <p>One of the most versatile languages — great for scripting, data science, AI and web backends.</p>
+        <ul class="topic-list">
+          <li>✅ Syntax &amp; Data Types</li>
+          <li>✅ Functions &amp; OOP</li>
+          <li>✅ File Handling</li>
+          <li>✅ Libraries (NumPy, Flask)</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://docs.python.org/3/tutorial/" target="_blank" class="btn">Official Docs</a>
+          <a href="https://www.w3schools.com/python/" target="_blank" class="btn btn-outline">W3Schools</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- C++ -->
+    <div class="course-card" data-title="C++" data-genre="programming">
+      <div class="course-icon" style="background:linear-gradient(135deg,#00599c,#004482);">
+        <span>C++</span>
+      </div>
+      <div class="course-body">
+        <span class="level advanced">Advanced</span>
+        <h3>C++ Programming</h3>
+        <p>A powerful systems language used in game development, embedded systems and high-performance apps.</p>
+        <ul class="topic-list">
+          <li>✅ Pointers &amp; Memory</li>
+          <li>✅ OOP &amp; Classes</li>
+          <li>✅ STL &amp; Templates</li>
+          <li>✅ File I/O</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://cplusplus.com/doc/tutorial/" target="_blank" class="btn">CPlusPlus.com</a>
+          <a href="https://www.w3schools.com/cpp/" target="_blank" class="btn btn-outline">W3Schools</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHP -->
+    <div class="course-card" data-title="PHP" data-genre="web programming">
+      <div class="course-icon" style="background:linear-gradient(135deg,#777bb4,#4f5b93);">
+        <span>PHP</span>
+      </div>
+      <div class="course-body">
+        <span class="level intermediate">Intermediate</span>
+        <h3>PHP Backend Dev</h3>
+        <p>Build dynamic websites and APIs with PHP — forms, sessions, databases and more.</p>
+        <ul class="topic-list">
+          <li>✅ Syntax &amp; Functions</li>
+          <li>✅ Forms &amp; Sessions</li>
+          <li>✅ MySQL with PDO</li>
+          <li>✅ REST APIs</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://www.php.net/manual/en/" target="_blank" class="btn">PHP Docs</a>
+          <a href="https://www.w3schools.com/php/" target="_blank" class="btn btn-outline">W3Schools</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SQL -->
+    <div class="course-card" data-title="SQL" data-genre="database">
+      <div class="course-icon" style="background:linear-gradient(135deg,#00758f,#f29111);">
+        <span>SQL</span>
+      </div>
+      <div class="course-body">
+        <span class="level beginner">Beginner</span>
+        <h3>SQL &amp; Databases</h3>
+        <p>Query, manage and design relational databases using MySQL and standard SQL.</p>
+        <ul class="topic-list">
+          <li>✅ SELECT, INSERT, UPDATE</li>
+          <li>✅ JOINs &amp; Subqueries</li>
+          <li>✅ Indexes &amp; Keys</li>
+          <li>✅ Database Design</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://dev.mysql.com/doc/" target="_blank" class="btn">MySQL Docs</a>
+          <a href="https://www.w3schools.com/sql/" target="_blank" class="btn btn-outline">W3Schools</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Git -->
+    <div class="course-card" data-title="Git" data-genre="tools">
+      <div class="course-icon" style="background:linear-gradient(135deg,#f05032,#c0392b);">
+        <span>Git</span>
+      </div>
+      <div class="course-body">
+        <span class="level beginner">Beginner</span>
+        <h3>Git &amp; Version Control</h3>
+        <p>Track changes, collaborate with teams and manage your code history using Git and GitHub.</p>
+        <ul class="topic-list">
+          <li>✅ Init, Commit, Push</li>
+          <li>✅ Branching &amp; Merging</li>
+          <li>✅ Pull Requests</li>
+          <li>✅ GitHub Workflow</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://git-scm.com/doc" target="_blank" class="btn">Git Docs</a>
+          <a href="https://docs.github.com/en/get-started" target="_blank" class="btn btn-outline">GitHub Docs</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- React -->
+    <div class="course-card" data-title="React" data-genre="web programming">
+      <div class="course-icon" style="background:linear-gradient(135deg,#20232a,#61dafb);">
+        <span style="color:#61dafb;">⚛</span>
+      </div>
+      <div class="course-body">
+        <span class="level intermediate">Intermediate</span>
+        <h3>React JS</h3>
+        <p>Build fast, modern user interfaces with React — components, hooks, state and routing.</p>
+        <ul class="topic-list">
+          <li>✅ Components &amp; Props</li>
+          <li>✅ useState &amp; useEffect</li>
+          <li>✅ React Router</li>
+          <li>✅ API Integration</li>
+        </ul>
+        <div class="course-links">
+          <a href="https://react.dev/learn" target="_blank" class="btn">React Docs</a>
+          <a href="https://www.w3schools.com/react/" target="_blank" class="btn btn-outline">W3Schools</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- LEARNING PATH BANNER -->
+  <section class="path-banner">
+    <div class="path-inner">
+      <h2>Not sure where to start?</h2>
+      <p>Follow our recommended learning path: <strong>HTML → CSS → JavaScript → Python → SQL</strong></p>
+      <a href="#courses" class="btn">Start Learning</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MAC Media. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

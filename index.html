@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAC Media</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="js/index.js" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">MAC<span>Media</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="home-hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-text">
+      <div class="hero-tag">🎬 Movies &nbsp;|&nbsp; 🎵 Music &nbsp;|&nbsp; 🌍 Culture</div>
+      <h1>Experience<br/><span class="typed-text" id="typedText"> Education </span><span class="cursor">|</span></h1>
+      <p>Discover the world's greatest films and music, all in one place.</p>
+      <div class="hero-cta">
+        <a href="movies.html" class="btn">Explore Movies</a>
+        <a href="music.html" class="btn btn-outline">Explore Music</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stat">
+      <span class="stat-num" data-target="500">0</span><span>+</span>
+      <p>Movies</p>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="1200">0</span><span>+</span>
+      <p>Tracks</p>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="50">0</span><span>+</span>
+      <p>Genres</p>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="10000">0</span><span>+</span>
+      <p>Users</p>
+    </div>
+  </section>
+
+  <!-- FEATURED SECTION -->
+  <section class="featured">
+    <div class="section-header">
+      <h2>Featured <span>This Week</span></h2>
+      <p>Hand-picked by our editors</p>
+    </div>
+    <div class="featured-grid">
+      <div class="featured-card big">
+        <div class="featured-bg" style="background: linear-gradient(135deg,#1a0000,#3a0010);">
+          <span class="featured-emoji">🎥</span>
+        </div>
+        <div class="featured-info">
+          <span class="featured-tag">Movie of the Week</span>
+          <h3>Inception</h3>
+          <p>A mind-bending journey through dreams within dreams.</p>
+          <a href="movies.html" class="btn">Watch Now</a>
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-bg" style="background: linear-gradient(135deg,#000d1a,#001a3a);">
+          <span class="featured-emoji">🌌</span>
+        </div>
+        <div class="featured-info">
+          <span class="featured-tag">Sci-Fi Pick</span>
+          <h3>Interstellar</h3>
+          <p>Beyond the stars, beyond time.</p>
+          <a href="movies.html" class="btn btn-outline">View</a>
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-bg" style="background: linear-gradient(135deg,#0d001a,#1a003a);">
+          <span class="featured-emoji">🎵</span>
+        </div>
+        <div class="featured-info">
+          <span class="featured-tag">Track of the Week</span>
+          <h3>Blinding Lights</h3>
+          <p>The Weeknd's iconic synth-pop anthem.</p>
+          <a href="music.html" class="btn btn-outline">Listen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="section-header">
+      <h2>Browse by <span>Category</span></h2>
+    </div>
+    <div class="cat-grid">
+      <a href="movies.html" class="cat-card" style="--c:#e50914;">
+        <span>🎬</span><h4>Action</h4>
+      </a>
+      <a href="movies.html" class="cat-card" style="--c:#0070f3;">
+        <span>🌌</span><h4>Sci-Fi</h4>
+      </a>
+      <a href="movies.html" class="cat-card" style="--c:#f5a623;">
+        <span>🎩</span><h4>Crime</h4>
+      </a>
+      <a href="music.html" class="cat-card" style="--c:#7928ca;">
+        <span>🎤</span><h4>Pop</h4>
+      </a>
+      <a href="music.html" class="cat-card" style="--c:#00b894;">
+        <span>🎸</span><h4>Rock</h4>
+      </a>
+      <a href="music.html" class="cat-card" style="--c:#fd79a8;">
+        <span>🎧</span><h4>Hip-Hop</h4>
+      </a>
+    </div>
+  </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>🎬 The Dark Knight &nbsp;⭐ 9.0</span>
+      <span>🎵 Blinding Lights &nbsp;🔥 Trending</span>
+      <span>🎬 Parasite &nbsp;⭐ 8.5</span>
+      <span>🎵 Bohemian Rhapsody &nbsp;🏆 Classic</span>
+      <span>🎬 Inception &nbsp;⭐ 8.8</span>
+      <span>🎵 Lose Yourself &nbsp;🏆 Classic</span>
+      <span>🎬 Interstellar &nbsp;⭐ 8.6</span>
+      <span>🎵 Levitating &nbsp;🔥 Trending</span>
+      <!-- duplicate for seamless loop -->
+      <span>🎬 The Dark Knight &nbsp;⭐ 9.0</span>
+      <span>🎵 Blinding Lights &nbsp;🔥 Trending</span>
+      <span>🎬 Parasite &nbsp;⭐ 8.5</span>
+      <span>🎵 Bohemian Rhapsody &nbsp;🏆 Classic</span>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <h2>Stay in the Loop</h2>
+      <p>Get weekly picks of the best movies and music straight to your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <p class="nl-msg" id="nlMsg"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MAC Media. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
